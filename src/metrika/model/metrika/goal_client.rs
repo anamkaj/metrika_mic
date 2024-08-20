@@ -29,6 +29,7 @@ impl GoalClient {
         let mut data: Vec<Goal> = Vec::new();
 
         for goal in goals.goals {
+             //* Одиночные цели */
             if goal.type_field == "action" {
                 data.push(Goal {
                     goal_id: goal.id,
